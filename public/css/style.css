@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family:"Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #eee;
+}
+
+.login_title {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-family: inherit;
+  font-size: 24px;
+  color: #666;
+}
+
+.container {
+
+}
+
+.signup_form {
+
+}
+
+.login_form {
+  width: 25%;
+  height: 400px;
+  background: #fff;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+}
+
+.box {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.box label {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.box input {
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 1px solid #ccc;
+  height: 30px;
+}
