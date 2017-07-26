@@ -1,20 +1,14 @@
-  <div class="login_container container" ng-controller="loginController">
-      <h2>Login</h2>
 
-		<form method="post" action="/users/register">
-			<div class="form-group">
-				<label>Email </label> <input type="text" ng-model="email" class="form-control" placeholder="Email" />
-			</div>
-		      
-		    <div class="form-group">
-		    	<label>Password</label> <input type="password" ng-model="password" class="form-control" placeholder="password" />
-		    </div>
-
-		    <div class="form-group">      
-		      <button type="submit" class="btn btn-default" ng-click="">Login</button>
-		    </div>
-
-		</form>
-
+  <div style="padding-bottom: 20px">It is header part</div>
+  <div class="container login_form" ng-controller="loginController">
+      <div class="login_title">Log in to Studio</div>
+      <div class="box">
+        <form>
+            <label>Username</label>
+            <input type="text" ng-model="username" placeholder="Username" />
+            <label>Password</label>
+            <input type="password" ng-model="password" placeholder="Password" />
+        </form>
+      </div>
   </div>
   <script type="text/javascript" src="/js/controllers/loginController.js"></script>
