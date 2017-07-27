@@ -3,11 +3,12 @@ body {
   padding: 0px;
   font-family:"Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #eee;
+  -webkit-font-smoothing: antialiased;
 }
 
 .login_title {
   text-align: center;
-  padding: 15px 0 20px;
+  padding: 40px 0 30px;
   font-family: inherit;
   font-size: 24px;
   color: #666;
@@ -22,12 +23,13 @@ body {
 }
 
 .login_form {
-  width: 25%;
-  height: 400px;
+  width: 400px;
+  height: 450px;
   background: #fff;
   margin: 0 auto;
+  margin-top: 20px;
   border: 2px solid #fff;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 }
 
 .box {
@@ -46,13 +48,72 @@ body {
 }
 
 .box input {
-  width: 80%;
+  width: 96%;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 7px 5px;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4em;
 }
 
 .box input[type="text"],
 .box input[type="password"] {
   border: 1px solid #ccc;
-  height: 30px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  border: 1px solid #0099e5;
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.btn {
+  width: 100% !important;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px !important;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.btn:hover {
+  background-color: #50ba53;
+}
+
+.btn:focus {
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.btn:active {
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.right {
+  float: right;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  color: #0099e5;
+}
+
+.dont_have_acct {
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
 }
