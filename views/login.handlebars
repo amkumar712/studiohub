@@ -1,13 +1,20 @@
 
-  <div style="padding-bottom: 20px">It is header part</div>
+  <div style="padding: 20px; text-align:center;"><h1>It is header part</h1></div>
   <div class="container login_form" ng-controller="loginController">
-      <div class="login_title">Log in to Studio</div>
+      <div class="login_title">Log in to StudioPix</div>
       <div class="box">
         <form>
-            <label>Username</label>
-            <input type="text" ng-model="username" placeholder="Username" />
+            <label>Email</label>
+            <input type="text" ng-model="email" />
+
+            <a class="link right" href="#">Forget Password?</a>
             <label>Password</label>
-            <input type="password" ng-model="password" placeholder="Password" />
+            <input type="password" ng-model="password" />
+
+            <input type="submit" class="btn" value="Log in" />
+
+            <div class="dont_have_acct">Don't have an account? <a href="#" class="link">Sign up</a> here</div>
+
         </form>
       </div>
   </div>
