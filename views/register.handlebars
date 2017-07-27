@@ -1,6 +1,23 @@
-<div ng-controller="registerController">
-    <h2>Register</h2>
-    Username: <input type="text" ng-model="registername" /> {[registername]}
-    Label: {[label]}
-</div>
-<script type="text/javascript" src="/js/controllers/registerController.js"></script>
+<div style="padding: 20px; text-align:center;"><h1>It is header part</h1></div>
+  <div class="container signup_form" ng-controller="loginController">
+      <div class="login_title">Join StudioPix</div>
+      <div class="box">
+        <form>
+        	
+            <label>Email</label>
+            <input type="text" ng-model="email" />
+
+            <label>Password</label>
+            <input type="password" ng-model="password" />
+
+            <label>Confirm Password</label>
+			<input type="password" ng-model="confirm_password" />
+
+            <input type="submit" class="signup_btn" value="Sign Up" />
+
+            <div class="dont_have_acct">Already have an account? <a href="#" class="link">Log in</a> here</div>
+
+        </form>
+      </div>
+  </div>
+  <script type="text/javascript" src="/js/controllers/loginController.js"></script>
